@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar'
+import ProviderDetails from './components/collection/ProviderDetails'
+import Collection from './pages/Collection'
+import Footer from './components/Footer'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-roboto bg-slate-100">
+      <Navbar />
+      <div className='flex justify-center px-5 sm:px-10 my-14'>
+        <div className='max-w-[1400px] w-full'>
+          <ProviderDetails />
+          <Collection />
+        </div>
+      </div>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
