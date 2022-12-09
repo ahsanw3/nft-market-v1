@@ -37,18 +37,18 @@ const ProviderDetails = () => {
         </button>
         <div className='hidden xl:block'>
           <div className=" flex gap-4 rounded-lg bg-white px-10 py-1 space-x-10 text-center uppercase">
-            <div>
+            <button>
               <p className="font-bold">3,160</p>
               <p className="text-xs font-light">Items</p>
-            </div>
-            <div>
+            </button>
+            <button>
               <p className="font-bold">0 bnb</p>
               <p className="text-xs font-light">volume traded</p>
-            </div>
-            <div>
+            </button>
+            <button>
               <p className="font-bold">1 bnb</p>
               <p className="text-xs font-light">floor</p>
-            </div>
+            </button>
           </div>
         </div>
         <div className="flex gap-2 rounded-lg border-gray-500/50 border bg-white h-[50px] w-[20%] items-center px-4">
