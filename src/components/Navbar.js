@@ -4,7 +4,7 @@ import { TbMoon } from 'react-icons/tb'
 
 const Navbar = () => {
   return (
-    <div className="bg-slate-200 flex justify-center px-5 sm:px-10">
+    <header className="bg-slate-200 flex justify-center px-5 sm:px-10">
       <div className="max-w-[1400px] w-full py-5">
         <div className="flex justify-between items-center">
           <div>
@@ -25,7 +25,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 export default Navbar
