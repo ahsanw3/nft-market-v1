@@ -20,7 +20,7 @@ const ProviderDetailsMobile = () => {
         </div>
       </div>
 
-      <div className="flex gap-4 py-5">
+      <div className="flex gap-4 pt-4">
         <div className="rounded-md border-gray-500/50 border bg-white">
           <div className="flex h-[100%] items-center gap-2 px-2">
             <IoSearchSharp size={32}></IoSearchSharp>
@@ -46,7 +46,7 @@ const ProviderDetailsMobile = () => {
         </button>
       </div>
 
-      <div className=" flex justify-between rounded-lg bg-white px-10 py-1 space-x-10 text-center uppercase mb-5">
+      <div className=" flex justify-between rounded-lg bg-white px-10 py-1 space-x-10 text-center uppercase">
         <div>
           <p className="font-bold">3,160</p>
           <p className="text-[10px] font-light">Items</p>
