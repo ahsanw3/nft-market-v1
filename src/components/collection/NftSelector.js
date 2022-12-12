@@ -2,7 +2,7 @@ const NftSelector = ({ selectorTab, setSelectorTab }) => {
   const active_css = 'bg-black text-white'
   const default_css = 'flex-1 rounded-full py-2'
   return (
-    <div className="text-center bg-white rounded-full font-medium mb-5">
+    <div className="text-center bg-white rounded-full font-medium">
       <div className="flex justify-evenly">
         <button
           onClick={() => {setSelectorTab('all')}}
