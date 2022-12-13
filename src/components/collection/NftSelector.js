@@ -5,25 +5,25 @@ const NftSelector = ({ selectorTab, setSelectorTab }) => {
     <div className="text-center bg-white rounded-full font-medium">
       <div className="flex justify-evenly">
         <button
-          onClick={() => {setSelectorTab('all')}}
+          onClick={() => setSelectorTab('all')}
           className={`${default_css} ${selectorTab === 'all' ? active_css : ''}`}
         >
           <p>All</p>
         </button>
         <button
-          onClick={() => {setSelectorTab('listing')}}
+          onClick={() => setSelectorTab('listing')}
           className={`${default_css} ${selectorTab === 'listing' ? active_css : ''}`}
         >
           <p>Listing</p>
         </button>
         <button
-          onClick={() => {setSelectorTab('offers')}}
+          onClick={() => setSelectorTab('offers')}
           className={`${default_css} ${selectorTab === 'offers' ? active_css : ''}`}
         >
           <p>Offers</p>
         </button>
         <button
-          onClick={() => {setSelectorTab('sold')}}
+          onClick={() => setSelectorTab('sold')}
           className={`${default_css} ${selectorTab === 'sold' ? active_css : ''}`}
         >
           <p>Sold</p>
