@@ -1,6 +1,6 @@
 const InformationBar = () => {
   return (
-    <div className=" flex justify-between rounded-lg bg-white px-10 py-1 space-x-10 text-center uppercase">
+    <div className=" flex justify-evenly rounded-lg bg-white lg:px-10 py-1 gap-4 text-center uppercase lg:w-max">
       <div>
         <p className="font-bold">3,160</p>
         <p className="text-[10px] font-light">Items</p>
