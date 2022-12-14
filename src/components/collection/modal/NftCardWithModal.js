@@ -8,9 +8,7 @@ const NftCardWithModal = ({ nft }) => {
   const [modalOpen, setModalOpen] = useState(false)
   return (
     <>
-      <button onClick={() => setModalOpen(true)} className="text-left">
-        <NftCard nft={nft} key={nft.token_id} />
-      </button>
+      <NftCard nft={nft} key={nft.token_id} />
       <ConfigProvider
         theme={{
           token: {
