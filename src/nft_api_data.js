@@ -5,7 +5,6 @@ const nfts = [
     currentOwner: 'Saqi',
     name: 'Markus',
     token_id: '1',
-    price: 299,
     img: profileImg,
     property: [
       ['Energy', '50'],
