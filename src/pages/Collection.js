@@ -21,7 +21,9 @@ const Collection = () => {
         setSelectorTab={setSelectorTab}
       />
       <Filters />
-      <BidsAndOffers />
+      <div className='md:hidden'>
+        <BidsAndOffers />
+      </div>
       <MyNftsToggler 
         myNftsSelectorTab={myNftsSelectorTab}
         setMyNftsSelectorTab={setMyNftsSelectorTab}
