@@ -18,9 +18,9 @@ const ModalComponent = ({
               <span>{property.length}</span>
             </p>
           </div>
-          {property.map((single_property) => {
+          {property.map((single_property, index) => {
             return (
-              <div className="bg-black text-white px-2 py-1 rounded-md font-medium">
+              <div className="bg-black text-white px-2 py-1 rounded-md font-medium" key={index}>
                 <p>
                   <span>{single_property[0]}: </span>
                   <span>{single_property[1]}</span>
