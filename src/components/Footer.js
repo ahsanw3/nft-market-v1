@@ -8,7 +8,7 @@ const Footer = () => {
     <>
       <footer className="bg-black flex justify-center px-5 sm:px-10 text-white">
         <div className="max-w-[1400px] w-full py-10">
-          <div className="lg:flex lg:justify-between items-center text-center mb:max-sm:space-y-5 sm:max-lg:space-y-8 sm:text-xl">
+          <div className="md:flex md:justify-between items-center text-center mb:max-sm:space-y-5 sm:max-lg:space-y-8 sm:text-xl">
             <div>
               <p>NFTKEY © 2022</p>
             </div>

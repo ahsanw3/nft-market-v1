@@ -7,7 +7,7 @@ const MyNftsToggler = ({ myNftsSelectorTab, setMyNftsSelectorTab }) => {
       : setMyNftsSelectorTab('off')
   }
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between items-center sm:text-base">
       <p>3160 items</p>
       <div className="flex gap-5">
         <div className="hidden md:block">
@@ -16,11 +16,11 @@ const MyNftsToggler = ({ myNftsSelectorTab, setMyNftsSelectorTab }) => {
         <div className="flex items-center">
           <p>My NFTs</p>
           <button onClick={() => handleMyNftsTogglerClick()}>
-            <div className="flex bg-slate-300 rounded-full ml-3 items-center text-xs text-slate-600 font-medium">
+            <div className="flex bg-slate-300 rounded-full ml-3 items-center text-xs text-slate-600 font-medium dark:bg-black dark:text-white">
               <p
                 className={`${
                   myNftsSelectorTab === 'off'
-                    ? 'bg-white text-black rounded-full px-3 py-1 flex-1'
+                    ? 'bg-white text-black rounded-full px-3 py-1 flex-1 dark:bg-neutral-800 dark:text-white'
                     : ' px-3 py-1 flex-1'
                 }`}
               >
@@ -29,7 +29,7 @@ const MyNftsToggler = ({ myNftsSelectorTab, setMyNftsSelectorTab }) => {
               <p
                 className={`${
                   myNftsSelectorTab === 'on'
-                    ? 'bg-black text-white rounded-full px-3 py-1 flex-1'
+                    ? 'bg-black text-white rounded-full px-3 py-1 flex-1 dark:bg-white dark:text-black'
                     : 'px-3 py-1 flex-1'
                 }`}
               >
