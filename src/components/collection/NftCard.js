@@ -12,13 +12,13 @@ const NftCard = ({ nft:{ provider, name, token_id, price, img } }) => {
         <p>Price</p>
         <p className="text-base">{price}</p>
         <AddToCartButton 
-          button_style='w-full sm:text-lg text-sm font-semibold text-center bg-gray-300 rounded-md'
-          div_style='px-5 py-2'
+          button_style='w-full sm:text-lg text-sm font-medium text-center bg-gray-300 rounded-md hover:font-extrabold'
+          p_style='px-5 py-2'
         />
 
         <BuyNowButton 
-          button_style='w-full sm:text-lg text-sm font-semibold text-center bg-green-500 rounded-md text-white'
-          div_style='px-5 py-2'
+          button_style='w-full sm:text-lg text-sm font-medium text-center bg-green-500 rounded-md text-white hover:font-extrabold'
+          p_style='px-5 py-2'
         />
       </div>
     </div>

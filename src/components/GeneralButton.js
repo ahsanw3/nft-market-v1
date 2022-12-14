@@ -1,7 +1,7 @@
-const GeneralButton = ({ text, button_style, div_style }) => {
+const GeneralButton = ({ text, button_style, p_style }) => {
   return (
-    <button className={`${button_style}`}>
-      <div className={`${div_style}`}>{text}</div>
+    <button className={`${button_style} z-20`}>
+      <p className={`${p_style}`}>{text}</p>
     </button>
   )
 }

@@ -17,7 +17,7 @@ const Navbar = () => {
             <GeneralButton
               text="Connect Wallet"
               button_style="text-sm sm:text-lg font-medium rounded-full bg-white"
-              div_style="px-3 py-1"
+              p_style="px-3 py-1"
             />
             <button className="rounded-full bg-white p-2">
               <TbMoon size={25} />
