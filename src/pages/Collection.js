@@ -28,7 +28,7 @@ const Collection = () => {
         myNftsSelectorTab={myNftsSelectorTab}
         setMyNftsSelectorTab={setMyNftsSelectorTab}
       />
-      {selectorTab === 'all' && <AllNfts nfts_data={nfts.nfts_data} />}
+      {selectorTab === 'all' && <AllNfts nfts={nfts} />}
     </div>
   )
 }
