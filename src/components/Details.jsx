@@ -1,4 +1,4 @@
-
+import Description from "./Description";
 import DetailsCard from "./DetailsCard";
 import TokenActivity from "./TokenActivity";
 import pic from "/home/dev/Desktop/nftkey/src/images/nftpic.png";
@@ -15,18 +15,27 @@ export default function Details() {
       type: "cat",
       owner: "DF1942",
       status: "Not for Sale",
-      description:"BGP - https://opensea.io/collection/bubblegumpuppies A collection of 10,000 Unique randomly generated Bubblegum Kids! Merch Drops,Community Comic,Giveaways and much more!Come Join the BGK Fam"
-    },
+      description: "Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot."  },
   ];
+
   return (
+
+
     <>
-      <div className="flex flex-col ">
-        <div className="flex gap-10 justify-center py-20 flex-col lg:flex-row">
-          <img src={pic} alt="" className="lg:w-1/4 rounded " />
-          <DetailsCard data={Data} />
+      <div className='flex justify-center'>
+        <div className="flex gap-10 justify-center py-20 flex-col lg:flex-row w-[80%]">
+          <div className="flex-1">
+            <img src={pic} alt="" className="rounded-lg" />
+          </div>
+          <div className="flex-1">
+            <div className="flex flex-col items-center gap-10">
+              <DetailsCard data={Data} />
+              <Description data={Data} />
+            </div>
+          </div>
         </div>
-        <TokenActivity/>
       </div>
+      <TokenActivity />
     </>
   );
 }
