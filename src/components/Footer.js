@@ -1,5 +1,4 @@
 import React from 'react'
-import { TbBrandDiscord } from 'react-icons/tb'
 import { BsMedium, BsTwitter } from 'react-icons/bs'
 import { SiDiscord } from 'react-icons/si'
 
