@@ -14,11 +14,11 @@ const NftCard = ({ nft }) => {
     <div className="rounded-lg bg-white hover:-translate-y-3 hover:duration-500 shadow-lg dark:bg-neutral-800">
       <button onClick={() => setModalOpen(true)} className="text-left">
         <img src={img} alt="profile" className="rounded-t-lg" />
-        <div className="px-4 pt-4 text-xs font-normal space-y-4">
+        <div className="px-4 pt-4 text-xs font-normal space-y-4 text-gray-700 dark:text-white">
           <div className='space-y-1'>
-            <p className='text-white/70'>{provider}</p>
-            <p className="text-base font-bold">{name}</p>
-            <p className='text-white/70'>Token ID {token_id}</p>
+            <p className='dark:text-white/70'>{provider}</p>
+            <p className="text-base font-bold text-black dark:text-white">{name}</p>
+            <p className='dark:text-white/70'>Token ID {token_id}</p>
           </div>
           <div className='space-y-1'>
             <p>Price</p>
