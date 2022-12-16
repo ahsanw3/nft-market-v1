@@ -27,16 +27,16 @@ const AudioPlayer = () => {
               <span class="bg-opacity-80 bg-black"></span>
             </div>
             <audio src="https://azuki-songs.s3.amazonaws.com/f1/08 Nuclear Lethargy.m4a"></audio>
-            <div class="flex block">
+            <div class="flex">
               <div class=" text-left  w-40 pr-8 flex flex-col justify-center">
                 <h3 class="font-bold uppercase text-md truncate">
                   Nuclear Lethargy
                 </h3>
-                <h4 class="uppercase font-mono text-2xs 0 opacity-40 truncate ">
+                <h4 class="uppercase font-mono text-2xs 0 opacity-40 truncate">
                   Lane 8
                 </h4>
               </div>
-              <div class="w-full grid grid-cols-3 rounded-md w-36 mr-2">
+              <div class="grid grid-cols-3 rounded-md w-36 mr-2">
                 <div class="flex items-center justify-center">
                   <button class="h-8 w-8 flex items-center justify-center transform hover:scale-110 active:scale-95">
                     <TbPlayerSkipBack size={20} fill />
