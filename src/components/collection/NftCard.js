@@ -6,8 +6,10 @@ import { useState } from 'react'
 import AddToCartButton from '../AddToCartButton'
 import BuyNowButton from '../BuyNowButton'
 import ModalComponent from './modal/ModalComponent'
+import { useSelector } from 'react-redux'
 
 const NftCard = ({ nft }) => {
+  const theme = useSelector(state => state.theme)
   const [modalOpen, setModalOpen] = useState(false)
   const { provider, name, token_id, price, img } = nft
   return (
@@ -29,14 +31,14 @@ const NftCard = ({ nft }) => {
       <ConfigProvider
         theme={{
           token: {
-            colorBgBase: '#171717',
+            colorBgBase: `${theme ==='dark' ? '#171717' : '#E2E8F0'}`,
           },
         }}
       >
         <Modal
           centered
           width={1100}
-          closeIcon={<RxCross2 size={20} className='text-white/50'/>}
+          closeIcon={<RxCross2 size={20} className='text-gray-500'/>}
           destroyOnClose={true}
           footer={null}
           open={modalOpen}

@@ -1,15 +1,26 @@
 import { IoSearchSharp } from 'react-icons/io5'
 import { MdOutlineLightMode } from 'react-icons/md'
 import { TbMoon } from 'react-icons/tb'
-
+import { useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
+import { actionCreators } from '../states'
 import GeneralButton from './GeneralButton'
-import { useState } from 'react'
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false)
+  const theme = useSelector(state => state.theme)
+  const dispatch = useDispatch()
   const changeTheme = () => {
-    darkMode ? document.documentElement.classList.remove('dark') : document.documentElement.classList.add('dark')
-    setDarkMode(!darkMode)
+    if (theme === 'dark'){
+      document.documentElement.classList.remove('dark')
+      dispatch(actionCreators.toggleTheme('light'))
+      console.log(theme)
+    }
+    else {
+      document.documentElement.classList.add('dark')
+      dispatch(actionCreators.toggleTheme('dark'))
+      console.log(theme)
+      // setDarkMode(!darkMode)
+    }
   }
   return (
     <header className="bg-slate-200 flex justify-center px-4 sm:px-10 dark:bg-black dark:text-white">
@@ -30,7 +41,7 @@ const Navbar = () => {
             <button 
               onClick={() => changeTheme()}
               className="rounded-full bg-white p-2 dark:bg-neutral-800">
-              {darkMode ? <MdOutlineLightMode size={25} /> : <TbMoon size={25} />}
+              {theme === 'dark' ? <MdOutlineLightMode size={25} /> : <TbMoon size={25} />}
             </button>
           </div>
         </div>
