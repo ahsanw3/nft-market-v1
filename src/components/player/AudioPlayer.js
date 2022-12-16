@@ -14,15 +14,15 @@ const AudioPlayer = () => {
   const [play, setPlay] = useState(false)
   const toggleMinimize = () => {
     if (minimizeBtn) {
-      document.getElementById('player-details').classList.remove('hidden')
       document
         .getElementById('player')
         .removeEventListener('click', () => toggleMinimize())
+      document.getElementById('player-details').classList.remove('hidden')
     } else {
-      document.getElementById('player-details').classList.add('hidden')
       document
         .getElementById('player')
         .addEventListener('click', () => toggleMinimize())
+      document.getElementById('player-details').classList.add('hidden')
     }
     setMinimizeBtn(!minimizeBtn)
   }
@@ -44,22 +44,21 @@ const AudioPlayer = () => {
           )}
         </button>
         <div
-          id="player"
-          onClick={() => toggleMinimize()}
           title="Nuclear Lethargy by Lane 8"
           className="duration-300 bg-slate-200  h-14 shadow-md  flex  rounded-md relative dark:bg-neutral-700"
         >
-          <img
-            className=" transform duration-200  h-20 -translate-y-6 hover:h-24 hover:-translate-y-10"
-            src={jaxImg}
-            alt="jax"
-          />
-          <div className="icon  ml-4 mr-4 pausedicon">
-            <span className="bg-opacity-80 bg-black"></span>
-            <span className="bg-opacity-80 bg-black"></span>
-            <span className="bg-opacity-80 bg-black"></span>
+          <div id="player" onClick={() => toggleMinimize()} className='flex'>
+            <img
+              className=" transform duration-200  h-20 -translate-y-6 hover:h-24 hover:-translate-y-10"
+              src={jaxImg}
+              alt="jax"
+            />
+            <div className="icon ml-4 mr-4 pausedicon">
+              <span className="bg-opacity-80 bg-black"></span>
+              <span className="bg-opacity-80 bg-black"></span>
+              <span className="bg-opacity-80 bg-black"></span>
+            </div>
           </div>
-          {/* <audio src="https://azuki-songs.s3.amazonaws.com/f1/08 Nuclear Lethargy.m4a"></audio> */}
           <div className="flex hidden" id="player-details">
             <div className=" text-left  w-40 pr-8 flex flex-col justify-center">
               <h3 className="font-bold uppercase text-md truncate">
