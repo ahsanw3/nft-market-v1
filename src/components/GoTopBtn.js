@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
 
 const GoTopBtn = () => {
@@ -23,13 +23,13 @@ const GoTopBtn = () => {
   return (
     <div>
       {isVisible && (
-        <div className="my-20 flex justify-end pr-10 fixed right-7 bottom-5">
-          <div
-            className="shadow-2xl bg-white p-2 rounded-full"
+        <div className="mb-6 flex justify-end fixed right-7 sm:pr-9 bottom-5">
+          <button
+            className="shadow-2xl bg-white p-2 rounded-full dark:bg-neutral-800 dark:text-white"
             onClick={goToBtn}
           >
             <MdKeyboardArrowUp size={40} />
-          </div>
+          </button>
         </div>
       )}
     </div>
