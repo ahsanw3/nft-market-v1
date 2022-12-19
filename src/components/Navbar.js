@@ -13,13 +13,10 @@ const Navbar = () => {
     if (theme === 'dark'){
       document.documentElement.classList.remove('dark')
       dispatch(actionCreators.toggleTheme('light'))
-      console.log(theme)
     }
     else {
       document.documentElement.classList.add('dark')
       dispatch(actionCreators.toggleTheme('dark'))
-      console.log(theme)
-      // setDarkMode(!darkMode)
     }
   }
   return (
