@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar'
+import Collection from './pages/Collection'
+import Footer from './components/Footer'
+import GoTopBtn from './components/GoTopBtn'
+import AudioPlayer from './components/player/AudioPlayer'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-roboto bg-slate-100 min-h-screen flex flex-col justify-between dark:bg-neutral-900 dark:text-white">
+      <div>
+        <Navbar />
+        <main className="flex justify-center px-5 sm:px-10 my-8">
+          <div className="max-w-[1400px] w-full">
+            <Collection />
+            <AudioPlayer />
+            <GoTopBtn />
+          </div>
+        </main>
+      </div>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
