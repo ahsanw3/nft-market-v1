@@ -11,7 +11,7 @@ const ProviderDetails = () => {
         <p className="text-4xl font-bold">Wizardium</p>
         <div className="flex text-sm">
           <a
-            href="#"
+            href="?"
             className="flex items-center space-x-2 mr-1"
           >
             <FaWifi color="green" />

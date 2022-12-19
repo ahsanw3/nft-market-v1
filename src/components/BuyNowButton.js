@@ -1,12 +1,12 @@
 import GeneralButton from "./GeneralButton"
 
-const BuyNowButton = ({ button_style, div_style }) => {
+const BuyNowButton = ({ button_style, p_style }) => {
   return (
     <>
       <GeneralButton 
         text='Buy Now'
         button_style={button_style}
-        div_style={div_style}
+        p_style={p_style}
       />
     </>
   )
