@@ -1,9 +1,12 @@
 import GeneralButton from '../../GeneralButton'
 
+
+
 const ModalComponent = ({
   nft: { provider, currentOwner, name, token_id, price, img, property },
 }) => {
   return (
+
     <div className="md:flex gap-10 py-5 md:px-8 px-4 dark:text-white">
       <div className="flex justify-center">
         <img src={img} alt="profile" className="rounded-lg" />
@@ -44,10 +47,11 @@ const ModalComponent = ({
               {price ? price : 'Not for Sale'}
             </p>
           </div>
-          <GeneralButton
+          < GeneralButton
             text="View full details"
             button_style="w-full sm:text-lg text-sm font-medium text-center bg-white border border-black rounded-md hover:font-extrabold dark:bg-neutral-800 dark:text-white dark:border-white"
             p_style="px-5 py-3"
+            to="/context"
           />
           <GeneralButton
             text="Place a bid"
