@@ -1,6 +1,6 @@
-import Description from "./Description";
-import DetailsCard from "./DetailsCard";
-import TokenActivity from "./TokenActivity";
+import Description from "../components/Details/Description";
+import DetailsCard from "../components/Details/DetailsCard";
+import TokenActivity from "../components/Details/TokenActivity";
 import pic from "/home/dev/Desktop/nftkey/src/images/nftpic.png";
 export default function Details() {
   let Data = [
