@@ -2,29 +2,29 @@ import {
   AiFillStepBackward,
   AiFillStepForward,
   AiOutlinePlus,
-} from "react-icons/ai";
-import { HiPlay, HiPause } from "react-icons/hi2";
-import jaxImg from "../../../images/jax.png";
-import { useState } from "react";
-import { VscChromeMinimize } from "react-icons/vsc";
+} from 'react-icons/ai'
+import { HiPlay, HiPause } from 'react-icons/hi2'
+import jaxImg from '../../../images/jax.png'
+import { useState } from 'react'
+import { VscChromeMinimize } from 'react-icons/vsc'
 
 const AudioPlayer = () => {
-  const [minimizeBtn, setMinimizeBtn] = useState(true);
-  const [play, setPlay] = useState(false);
+  const [minimizeBtn, setMinimizeBtn] = useState(true)
+  const [play, setPlay] = useState(false)
   const toggleMinimize = () => {
     if (minimizeBtn) {
       document
-        .getElementById("player")
-        .removeEventListener("click", () => toggleMinimize());
-      document.getElementById("player-details").classList.remove("hidden");
+        .getElementById('player')
+        .removeEventListener('click', () => toggleMinimize())
+      document.getElementById('player-details').classList.remove('hidden')
     } else {
       document
-        .getElementById("player")
-        .addEventListener("click", () => toggleMinimize());
-      document.getElementById("player-details").classList.add("hidden");
+        .getElementById('player')
+        .addEventListener('click', () => toggleMinimize())
+      document.getElementById('player-details').classList.add('hidden')
     }
-    setMinimizeBtn(!minimizeBtn);
-  };
+    setMinimizeBtn(!minimizeBtn)
+  }
   return (
     <div className="hidden lg:block fixed bottom-8 left-0 px-8 z-70">
       <div className="relative duration-100">
@@ -91,6 +91,6 @@ const AudioPlayer = () => {
         </div>
       </div>
     </div>
-  );
-};
-export default AudioPlayer;
+  )
+}
+export default AudioPlayer

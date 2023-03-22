@@ -1,25 +1,28 @@
-import { MdKeyboardArrowUp } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { MdKeyboardArrowUp } from 'react-icons/md'
+import { useEffect, useState } from 'react'
 
 const GoTopBtn = () => {
-  const [isVisible, setisVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
+
   const goToBtn = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  };
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  }
 
   const listenToScroll = () => {
-    let heightToHidden = 250;
+    let heightToHidden = 250
     const scrolledHeight =
-      document.body.scrollTop || document.documentElement.scrollTop;
+      document.body.scrollTop || document.documentElement.scrollTop
     if (scrolledHeight > heightToHidden) {
-      setisVisible(true);
+      setIsVisible(true)
     } else {
-      setisVisible(false);
+      setIsVisible(false)
     }
-  };
+  }
+
   useEffect(() => {
-    window.addEventListener("scroll", listenToScroll);
-  }, []);
+    window.addEventListener('scroll', listenToScroll)
+  }, [])
+  
   return (
     <div>
       {isVisible && (
@@ -33,7 +36,7 @@ const GoTopBtn = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default GoTopBtn;
+export default GoTopBtn

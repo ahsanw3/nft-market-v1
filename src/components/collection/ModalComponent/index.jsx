@@ -1,5 +1,4 @@
 import GeneralButton from '../../shared/GeneralButton'
-
 import { Link } from 'react-router-dom'
 
 const ModalComponent = ({
@@ -46,8 +45,8 @@ const ModalComponent = ({
               {price ? price : 'Not for Sale'}
             </p>
           </div>
-          <div className='space-y-4'>
-            <Link to="/details">
+          <div className="space-y-4">
+            <Link to={`/details/${token_id}`}>
               <button className="w-full sm:text-lg text-sm font-medium text-center bg-white border text-black border-black rounded-md hover:font-extrabold dark:bg-neutral-800 dark:text-white dark:border-white">
                 <p className=" px-5 py-3">View full details</p>
               </button>

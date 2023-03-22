@@ -6,6 +6,8 @@ const nfts = [
     name: 'Markus',
     token_id: '1',
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Health', '50'],
@@ -20,6 +22,8 @@ const nfts = [
     token_id: '2',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -35,6 +39,8 @@ const nfts = [
     token_id: '3',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -50,6 +56,8 @@ const nfts = [
     token_id: '4',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -65,6 +73,8 @@ const nfts = [
     token_id: '5',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -80,6 +90,8 @@ const nfts = [
     token_id: '6',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -95,6 +107,8 @@ const nfts = [
     token_id: '7',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -110,6 +124,8 @@ const nfts = [
     token_id: '8',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -125,6 +141,8 @@ const nfts = [
     token_id: '9',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -140,6 +158,8 @@ const nfts = [
     token_id: '10',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -155,6 +175,8 @@ const nfts = [
     token_id: '11',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -170,6 +192,8 @@ const nfts = [
     token_id: '12',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -185,6 +209,8 @@ const nfts = [
     token_id: '13',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -200,6 +226,8 @@ const nfts = [
     token_id: '14',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -215,6 +243,8 @@ const nfts = [
     token_id: '15',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -230,6 +260,8 @@ const nfts = [
     token_id: '16',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -245,6 +277,8 @@ const nfts = [
     token_id: '17',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -260,6 +294,8 @@ const nfts = [
     token_id: '18',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -275,6 +311,8 @@ const nfts = [
     token_id: '19',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],
@@ -290,6 +328,8 @@ const nfts = [
     token_id: '20',
     price: 299,
     img: profileImg,
+    description:
+      'Young alchemist and a great explorer. Fortune smiles at him, he always finds rich loot.',
     property: [
       ['Energy', '50'],
       ['Grade', 'Low'],

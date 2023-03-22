@@ -1,6 +1,6 @@
-import React from "react";
-const pic = require("../../../images/eth.svg").default;
-const TokenActivity =() => {
+const pic = require('../../../images/eth.svg').default
+
+const TokenActivity = () => {
   return (
     <div className="col-span-full rounded-2xl border border-gray-300 bg-white p-6 dark:border-neutral-600 dark:bg-neutral-800">
       <div className="reservoir-h5 font-headings dark:text-white">
@@ -43,7 +43,7 @@ const TokenActivity =() => {
               </td>
               <td className="px-6 py-4">
                 <div className="inline-flex flex-none items-center gap-1">
-                  <img src={pic} alt="ETH logo" style={{ width: "8px" }} />
+                  <img src={pic} alt="ETH logo" style={{ width: '8px' }} />
                   <span className="flex-grow whitespace-nowrap font-semibold">
                     0.05
                   </span>
@@ -81,7 +81,7 @@ const TokenActivity =() => {
               </td>
               <td className="px-6 py-4">
                 <div className="inline-flex flex-none items-center gap-1">
-                  <img src={pic} alt="ETH logo" style={{ width: "8px" }} />
+                  <img src={pic} alt="ETH logo" style={{ width: '8px' }} />
                   <span className="flex-grow whitespace-nowrap font-semibold">
                     0.08
                   </span>
@@ -119,7 +119,7 @@ const TokenActivity =() => {
               </td>
               <td className="px-6 py-4">
                 <div className="inline-flex flex-none items-center gap-1">
-                  <img src={pic} alt="ETH logo" style={{ width: "8px" }} />
+                  <img src={pic} alt="ETH logo" style={{ width: '8px' }} />
                   <span className="flex-grow whitespace-nowrap font-semibold">
                     0.08
                   </span>
@@ -147,8 +147,7 @@ const TokenActivity =() => {
         </table>
       </div>
     </div>
-  );
+  )
 }
-
 
 export default TokenActivity

@@ -1,4 +1,3 @@
-import React from 'react'
 const pic1 = require('../../../images/download (1).svg').default
 const pic2 = require('../../../images/download (2).svg').default
 const pic3 = require('../../../images/download (3).svg').default
@@ -11,7 +10,7 @@ const Description = ({ data }) => {
         Description
       </h5>
       <p class="font-normal text-gray-700 dark:text-white/75">
-        {data[0].description}
+        {data.description}
       </p>
       <div className="flex flex-wrap gap-3 justify-between mt-7">
         <img src={pic1} alt="/" />

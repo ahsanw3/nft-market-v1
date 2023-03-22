@@ -1,4 +1,4 @@
-import BidsAndOffers from "../BidsAndOffers"
+import BidsAndOffers from '../BidsAndOffers'
 
 const MyNftsToggler = ({ myNftsSelectorTab, setMyNftsSelectorTab }) => {
   const handleMyNftsTogglerClick = () => {
@@ -6,6 +6,7 @@ const MyNftsToggler = ({ myNftsSelectorTab, setMyNftsSelectorTab }) => {
       ? setMyNftsSelectorTab('on')
       : setMyNftsSelectorTab('off')
   }
+
   return (
     <div className="flex justify-between items-center sm:text-base">
       <p>3160 items</p>

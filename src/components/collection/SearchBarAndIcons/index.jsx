@@ -17,10 +17,10 @@ const SearchBarAndIcons = () => {
           />
         </div>
       </div>
-      <div className='hidden lg:block'>
+      <div className="hidden lg:block">
         <InformationBar />
       </div>
-      <div className='flex gap-3 items-center'>
+      <div className="flex gap-3 items-center">
         <button className="rounded-full bg-white p-1 dark:bg-neutral-800">
           <BsInfo size={30} />
         </button>

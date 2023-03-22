@@ -1,10 +1,12 @@
 import { useState } from 'react'
+
 import AllNfts from '../../components/collection/AllNfts'
 import BidsAndOffers from '../../components/collection/BidsAndOffers'
 import Filters from '../../components/collection/Filters'
 import MyNftsToggler from '../../components/collection/MyNftsToggler'
 import NftSelector from '../../components/collection/NftSelector'
 import ProviderDetails from '../../components/collection/ProviderDetails'
+
 import nfts from '../../nft_api_data'
 
 const Collection = () => {
@@ -12,17 +14,14 @@ const Collection = () => {
   const [myNftsSelectorTab, setMyNftsSelectorTab] = useState('off')
 
   return (
-    <div className='space-y-5 text-sm'>
+    <div className="space-y-5 text-sm">
       <ProviderDetails />
-      <NftSelector 
-        selectorTab={selectorTab}
-        setSelectorTab={setSelectorTab}
-      />
+      <NftSelector selectorTab={selectorTab} setSelectorTab={setSelectorTab} />
       <Filters />
-      <div className='md:hidden'>
+      <div className="md:hidden">
         <BidsAndOffers />
       </div>
-      <MyNftsToggler 
+      <MyNftsToggler
         myNftsSelectorTab={myNftsSelectorTab}
         setMyNftsSelectorTab={setMyNftsSelectorTab}
       />

@@ -1,9 +1,8 @@
-import React from 'react'
 import { IoIosArrowBack } from 'react-icons/io'
 
 const DetailsCard = ({ data }) => {
   return (
-    <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-neutral-800 dark:border-neutral-700">
+    <div className="block px-6 py-10 w-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-neutral-800 dark:border-neutral-700">
       <div className="flex">
         <button type="button">
           <IoIosArrowBack />
@@ -12,51 +11,34 @@ const DetailsCard = ({ data }) => {
         <span className="ml-2"> Wingardium </span>
       </div>
       <div className="ml-1">
-        <p className="text-3xl font-bold my-5">{data[0].Name}</p>
-        <p className=""> Token ID {data[0].id}</p>
-        <div className=" flex flex-wrap py-3 gap-1 font-bold">
-          <button
-            type="button"
-            className="bg-black text-white text-sm px-1 rounded "
-          >
-            Count: {data[0].attribute}
-          </button>
-          <button
-            type="button"
-            className="bg-black text-white text-sm px-1 rounded"
-          >
-            Energy: {data[0].energy}
-          </button>
-          <button
-            type="button"
-            className="bg-black text-white text-sm px-1 rounded"
-          >
-            Grade: {data[0].Grade}
-          </button>
-          <button
-            type="button"
-            className="bg-black text-white text-sm px-1 rounded"
-          >
-            Health: {data[0].Health}
-          </button>
-          <button
-            type="button"
-            className="bg-black text-white text-sm px-1 rounded"
-          >
-            Luck: {data[0].luck}
-          </button>
-          <button
-            type="button"
-            className="bg-black text-white text-sm px-1 rounded"
-          >
-            Type: {data[0].type}
-          </button>
+        <p className="text-3xl font-bold my-5">{data.name}</p>
+        <p className=""> Token ID {data.token_id}</p>
+        <div className=" flex flex-wrap py-3 gap-1 font-bold space-x-1">
+          {data.property.map((single_property, index) => {
+            return (
+              <div
+                className="bg-black text-white px-2 rounded-md font-medium"
+                key={index}
+              >
+                <p>
+                  <span>{single_property[0]}: </span>
+                  <span>{single_property[1]}</span>
+                </p>
+              </div>
+            )
+          })}
         </div>
         <div>
-          <p className="py-4"> Owned By {data[0].owner}</p>
+          <p className="py-4"> Owned By {data.currentOwner}</p>
         </div>
-        <p className="text-sm text-gray-700 mb-2 dark:text-white/75"> Market Status</p>
-        <p className="font-bold text-xl"> {data[0].status}</p>
+        <div>
+          <p className="text-gray-600 text-sm dark:text-white/75">
+            {data.price ? 'Price' : 'Market status'}
+          </p>
+          <p className="text-2xl font-medium">
+            {data.price ? data.price : 'Not for Sale'}
+          </p>
+        </div>
         <button className="mt-4 w-full sm:text-lg text-sm font-medium text-center bg-white border border-black rounded-md hover:font-extrabold dark:bg-neutral-800 dark:text-white dark:border-white">
           <p className=" px-5 py-3">Place a bid</p>
         </button>

@@ -9,9 +9,11 @@ import { useDispatch } from 'react-redux'
 
 const Navbar = () => {
   const theme = useSelector((state) => state.theme)
+  const dispatch = useDispatch()
+
   const fill_bg = theme === 'light' ? 'black' : 'white'
   const fill_text = theme === 'light' ? 'white' : 'black'
-  const dispatch = useDispatch()
+
   const changeTheme = () => {
     if (theme === 'dark') {
       document.documentElement.classList.remove('dark')
@@ -21,6 +23,7 @@ const Navbar = () => {
       dispatch(actionCreators.toggleTheme('dark'))
     }
   }
+
   return (
     <header className="bg-slate-200 flex justify-center px-4 sm:px-10 dark:bg-black dark:text-white">
       <div className="max-w-[1400px] w-full py-3 sm:py-5">

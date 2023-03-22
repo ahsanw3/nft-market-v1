@@ -1,10 +1,10 @@
-import Navbar from './components/shared/Navbar'
+import AudioPlayer from './components/player/AudioPlayer'
 import Collection from './pages/Collection'
+import Details from './pages/Details'
 import Footer from './components/shared/Footer'
 import GoTopBtn from './components/shared/GoTopBtn'
-import AudioPlayer from './components/player/AudioPlayer'
-import {Routes, Route} from 'react-router-dom'
-import Details from './pages/Details'
+import Navbar from './components/shared/Navbar'
+import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
@@ -13,12 +13,12 @@ const App = () => {
         <Navbar />
         <main className="flex justify-center px-5 sm:px-10 my-8">
           <div className="max-w-[1400px] w-full">
-      <Routes>
-        <Route path="/" element={<Collection />} />
-        <Route path="/" element={<AudioPlayer />} />
-        <Route path="/" element={<GoTopBtn />} />
-        <Route path="/details" element={<Details />} />
-      </Routes>
+            <Routes>
+              <Route path="/" element={<Collection />} />
+              <Route path="/details/:id" element={<Details />} />
+            </Routes>
+            <GoTopBtn />
+            <AudioPlayer />
           </div>
         </main>
       </div>

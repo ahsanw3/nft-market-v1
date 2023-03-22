@@ -5,9 +5,7 @@ const ProviderNameAndDescription = () => {
     <div className="space-y-3">
       <p className="text-2xl font-bold sm:text-3xl">Wizardium</p>
       <div className="flex text-sm">
-        <a
-          href='?'
-          className="flex items-center space-x-2 mr-1">
+        <a href="?" className="flex items-center space-x-2 mr-1">
           <FaWifi color="green" />
           <p className="underline">Mint</p>
         </a>
