@@ -4,7 +4,7 @@ import {
   AiOutlinePlus,
 } from 'react-icons/ai'
 import { HiPlay, HiPause } from 'react-icons/hi2'
-import jaxImg from '../../../images/jax.png'
+import jaxImg from '../../../images/AudioPlayer/jax.png'
 import { useState } from 'react'
 import { VscChromeMinimize } from 'react-icons/vsc'
 

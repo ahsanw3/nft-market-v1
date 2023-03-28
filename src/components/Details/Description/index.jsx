@@ -1,7 +1,7 @@
-const pic1 = require('../../../images/download (1).svg').default
-const pic2 = require('../../../images/download (2).svg').default
-const pic3 = require('../../../images/download (3).svg').default
-const pic4 = require('../../../images/download.svg').default
+const pic1 = require('../../../images/Description/download (1).svg').default
+const pic2 = require('../../../images/Description/download (2).svg').default
+const pic3 = require('../../../images/Description/download (3).svg').default
+const pic4 = require('../../../images/Description/download.svg').default
 
 const Description = ({ data }) => {
   return (

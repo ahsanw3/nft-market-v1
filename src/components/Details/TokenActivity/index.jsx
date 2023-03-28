@@ -1,4 +1,4 @@
-const pic = require('../../../images/eth.svg').default
+const pic = require('../../../images/TokenActivity/eth.svg').default
 
 const TokenActivity = () => {
   return (
