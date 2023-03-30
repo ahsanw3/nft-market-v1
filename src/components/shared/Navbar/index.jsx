@@ -31,7 +31,7 @@ const Navbar = () => {
           <Link to={'/'}>
             <div>
               <svg
-                width="174"
+                width="150"
                 height="40"
                 viewBox="0 0 174 40"
                 fill="none"
